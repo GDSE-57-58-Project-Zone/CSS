@@ -8,6 +8,9 @@
     <meta charset="UTF-8">
     <title>Animation Case 2</title>
     <style>
+        body{
+            background-color: #2e3136;
+        }
         main{
             width: 700px;
             height: 400px;
@@ -15,9 +18,10 @@
             left: 0;
             right: 0;
             top: 0;
-            bottom: 0;
+            bottom: 100px;
             margin:auto;
             overflow: hidden;
+            border: 5px solid #d7c6c6d6;;
         }
         main>section{
             width: 400%;
@@ -56,14 +60,25 @@
             background-position: center;
         }
 
+        body>section{
+            position: absolute;
+            width: 100%;
+            height: max-content;
+            text-align: center;
+            color: #e7e1e1;
+            font-family: Ubuntu;
+            font-weight: bold;
+
+            font-size: 30px;
+        }
         @keyframes slideme {
-            0%,20%{
+            0%,15%{
                 transform: translateX(0);
             }
-            25%,45%{
+            25%,40%{
                 transform: translateX(-25%);
             }
-            50%,75%{
+            50%,70%{
                 transform: translateX(-50%);
             }
 
@@ -83,6 +98,9 @@
         <div></div>
     </section>
 </main>
+<section>
+    <h1>CSS SLIDER</h1>
+</section>
 
 
 </body>
