@@ -17,13 +17,14 @@
             top: 0;
             bottom: 0;
             margin:auto;
-            overflow-x: scroll;
-            overflow-y: hidden;
+            overflow: hidden;
         }
         main>section{
             width: 400%;
             height: 100%;
             display: flex;
+            animation-name: slideme;
+            animation-duration: 10s;
         }
 
         main>section>div{
@@ -51,6 +52,22 @@
             background: url("assets/images/img4.jpg");
             background-size: cover;
             background-position: center;
+        }
+
+        @keyframes slideme {
+            0%,20%{
+                transform: translateX(0);
+            }
+            25%,45%{
+                transform: translateX(-25%);
+            }
+            50%,75%{
+                transform: translateX(-50%);
+            }
+
+            100%{
+                transform: translateX(-75%);
+            }
         }
     </style>
 </head>
