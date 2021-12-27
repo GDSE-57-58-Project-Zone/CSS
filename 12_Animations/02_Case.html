@@ -1,0 +1,71 @@
+<!--/**
+* @author : Sanu Vithanage
+* @since : 0.1.0
+**/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case 2</title>
+    <style>
+        main{
+            width: 700px;
+            height: 400px;
+            border: 2px solid red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin:auto;
+        }
+        main>section{
+            width: 400%;
+            height: 100%;
+            border: 3px solid green;
+            display: flex;
+        }
+
+        main>section>div{
+            width: 100%;
+            border: 2px solid blue;
+        }
+        section>div:nth-child(1){
+            background: url("assets/images/img1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(2){
+            background: url("assets/images/img2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(3){
+            background: url("assets/images/img3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(4){
+            background: url("assets/images/img4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+
+</body>
+</html>
