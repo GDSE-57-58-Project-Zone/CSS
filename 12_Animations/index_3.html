@@ -15,19 +15,23 @@
             animation-name: test;
             animation-duration: 5s;
             position: relative;
-            animation-iteration-count: 1; /*1..9 | infinite*/
-            animation-direction: normal; /*reverse | alternate | alternate-reverse*/
+            animation-iteration-count: 2; /*1..9 | infinite*/
+            animation-direction: alternate; /*reverse | alternate | alternate-reverse*/
 
             /*last frame hold after ending the round*/
-            animation-fill-mode: forwards; /* none | forwards | backwards | both */
+            animation-fill-mode: both; /* none | forwards | backwards | both */
+
+            /*animation-delay: 5s;*/
         }
 
         @keyframes test {
             from {
                 left: 0;
+                background-color: yellow;
             }
             to {
                 left: 500px;
+                background-color: green;
             }
         }
     </style>
