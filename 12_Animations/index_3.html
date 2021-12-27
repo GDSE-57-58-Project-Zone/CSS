@@ -15,8 +15,11 @@
             animation-name: test;
             animation-duration: 5s;
             position: relative;
-            animation-iteration-count: infinite;
-            animation-direction: alternate-reverse;
+            animation-iteration-count: 1; /*1..9 | infinite*/
+            animation-direction: normal; /*reverse | alternate | alternate-reverse*/
+
+            /*last frame hold after ending the round*/
+            animation-fill-mode: forwards; /* none | forwards | backwards | both */
         }
 
         @keyframes test {
