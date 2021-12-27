@@ -9,23 +9,27 @@
     <title>Animation Case 1</title>
     <style>
         section{
+            margin-top: 100px;
+            margin-left: 100px;
             position: relative;
             width: 210px;
             height: 120px;
-            border:1px solid red;
+            /*border:1px solid red;*/
             background: url("assets/images/img.gif");
             background-size: cover;
             background-position: center;
             animation-name: gogo;
             animation-duration: 5s;
             animation-iteration-count: infinite;
-            animation-direction: alternate;
+            animation-direction: normal;
+            /*animation-play-state: running;*/
         }
 
         @keyframes gogo {
-            0%{
+            0%,20%{
                 left: 0;
                 top: 0;
+                transform: rotate(0deg);
             }
 
             25%{
