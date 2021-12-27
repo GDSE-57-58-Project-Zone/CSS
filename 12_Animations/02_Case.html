@@ -11,24 +11,23 @@
         main{
             width: 700px;
             height: 400px;
-            border: 2px solid red;
             position: absolute;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
             margin:auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
         }
         main>section{
             width: 400%;
             height: 100%;
-            border: 3px solid green;
             display: flex;
         }
 
         main>section>div{
             width: 100%;
-            border: 2px solid blue;
         }
         section>div:nth-child(1){
             background: url("assets/images/img1.jpg");
