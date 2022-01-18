@@ -15,7 +15,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
                 data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,67 +54,83 @@
     </div>
 </nav>
 
-<form>
-    <div class="mb-3">
-        <label class="form-label" for="exampleInputEmail1">Email address</label>
-        <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" type="email">
-        <div class="form-text" id="emailHelp">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label class="form-label" for="exampleInputPassword1">Password</label>
-        <input class="form-control" id="exampleInputPassword1" type="password">
-    </div>
-    <div class="mb-3 form-check">
-        <input class="form-check-input" id="exampleCheck1" type="checkbox">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button class="btn btn-primary" type="submit">Submit</button>
-</form>
+<section class="container-fluid mt-4">
+    <section class="row">
+        <div class="col-12 col-md-12 col-lg">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label" for="exampleInputEmail1">Email address</label>
+                    <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" type="email">
+                    <div class="form-text" id="emailHelp">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="exampleInputPassword1">Password</label>
+                    <input class="form-control" id="exampleInputPassword1" type="password">
+                </div>
+                <div class="mb-3 form-check">
+                    <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col col-md-12 col-lg">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Second Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="row mt-5">
+        <div class="col">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleControls">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block w-100" src="assets/img/image1.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block w-100" src="assets/img/image2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block w-100" src="assets/img/image3.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleControls"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleControls"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
 
-<table class="table">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Second Name</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Larry the Bird</td>
-        <td>@twitter</td>
-    </tr>
-    </tbody>
-</table>
+</section>
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/img/image1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/image2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/image3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
